@@ -1,8 +1,0 @@
-Explanation of cleaed data files
-
-1. folder clean_datasource_files-EARLY_TEST_VERSION contains files that were iteratively generated, reviews, scrubbed and loaded.  Can be deleted once final is created
-2. clean_fake_full.csv is the full dataset cleaned for fake news
-3. clean_true_full.csv is the full dataset cleaned for true news
-4. combined_parial.csv is the csv version of the 9,000 records loaded into the postgres SQL database for heroku.  The file contains 4,500 fake and 4,500 true.  1 = fake and 0 = true
-5. combined_partial.txt is the txt version of 4 that is | delimed and scrubbed to remove the 5 records that are of issue when loading data into Postgres.
-6. datasources_MSS folder contains datasource files that were originally manually scrubbed. This folder may be moved or deleted once the project is final.
