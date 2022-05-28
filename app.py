@@ -52,7 +52,7 @@ def send():
         subject = request.form["articlesubject"]
         date = request.form["articledate"]
         #status = random.choice(TrueFalse)
-        print(newspredictor(text))
+        test = newspredictor(text)
         news = News(title=title, text=text, subject=subject, news_date=date)
         db.session.add(news)
         db.session.commit()
