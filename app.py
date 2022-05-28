@@ -10,6 +10,7 @@ from flask import (
     redirect)
 import random
 import psycopg2
+from predictor import newspredictor
 
 
 #################################################
@@ -51,11 +52,10 @@ def send():
         subject = request.form["articlesubject"]
         date = request.form["articledate"]
         #status = random.choice(TrueFalse)
-
-        news = News(title=title, text=text, subject=subject, news_date=date)                   #,model_resp=status
+        print(newspredictor(text))
+        news = News(title=title, text=text, subject=subject, news_date=date)
         db.session.add(news)
         db.session.commit()
-        
         return redirect("/", code=302)
 
     return render_template("form.html")
