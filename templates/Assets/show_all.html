@@ -24,18 +24,15 @@
    <body>
         <div class="container">
             <div class="jumbotron"  style="text-align: center">
-                <h1>Review All News Articles Input</h1>
+                <h2><p>Review All News Articles Input</p></h2>
             </div>
         </div>
         <div class="container">
-                <div class="col-md-4" style="text-align: center">
-                    <h3><a href = "../index.html">Home Page</a></h3>
+                <div class="col-md-6" style="text-align: center">
+                    <h3><a href = "/">Home Page</a></h3>
                 </div>
-                <div class="col-md-4" style="text-align: center">
-                    <h3><a href = "../Assets/form.html">Fake News Input Form</a></h3>
-                </div>
-                <div class="col-md-4" style="text-align: center">
-                    <h3><a href = "../Assets/visualizations.html">Visualizations</a></h3>
+                <div class="col-md-6" style="text-align: center">
+                    <h3><a href = "/send">Fake News Input Form</a></h3>
                 </div>
         </div>            
         </br>
@@ -43,14 +40,35 @@
             <div class="row">
                 <div class="col-md-12" style="text-align: center">
                     <hr/>
-                    <a href="../../Resources/Fake.csv" download>
-                        <img src="../../Resources/Fake.csv"> Click to download the fake news
-                    </a>
-                </br>
-                    <a href="../../Resources/True.csv" download>
-                        <img src="../../Resources/True.csv"> Click to download the true news
-                    </a>
+                    {%- for message in get_flashed_messages() %}
+                    {{ message }}
+                    {%- endfor %}
+                    
                     <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Article Title</th>
+                                <th>Article Text</th>
+                                <th>Article Subject</th>
+                                <th>Article Date</th>
+                                <th>Article Status</th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            {% for news in News %}
+                                <tr>
+                                    <td>{{ news.id }}</td>          
+                                    <td>{{ news.title }}</td>          
+                                    <td>{{ news.text }}</td>          
+                                    <td>{{ news.subject }}</td>          
+                                    <td>{{ news.news_date }}</td>          
+                                    <td>{{ news.model_resp }}</td>          
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div> 
