@@ -45,29 +45,29 @@
                     {%- endfor %}
                     
                     <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Article Title</th>
-                            <th>Article Text</th>
-                            <th>Article Subject</th>
-                            <th>Article Date</th>
-                            <th>Article Status</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        {% for news in News %}
+                        <thead>
                             <tr>
-                                <td>{{ news.id }}</td>          
-                                <td>{{ news.title }}</td>          
-                                <td>{{ news.text }}</td>          
-                                <td>{{ news.subject }}</td>          
-                                <td>{{ news.news_date }}</td>          
-                                <td>{{ news.model_resp }}</td>          
+                                <th>ID</th>
+                                <th>Article Title</th>
+                                <th>Article Text</th>
+                                <th>Article Subject</th>
+                                <th>Article Date</th>
+                                <th>Article Status</th>
                             </tr>
-                        {% endfor %}
-                    </tbody>
+                        </thead>
+                    
+                        <tbody>
+                            {% for news in News %}
+                                <tr>
+                                    <td>{{ news.id }}</td>          
+                                    <td>{{ news.title }}</td>          
+                                    <td>{{ news.text }}</td>          
+                                    <td>{{ news.subject }}</td>          
+                                    <td>{{ news.news_date }}</td>          
+                                    <td>{{ news.model_resp }}</td>          
+                                </tr>
+                            {% endfor %}
+                        </tbody>
                     </table>
                 </div>
             </div>
