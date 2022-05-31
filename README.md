@@ -19,6 +19,17 @@ https://fakenewsfinder.herokuapp.com/
 
 <br>
 
+## Project Desc/Outline: 
+
+Wilkepedia defines Fake news as “false or misleading information presented as news. Fake news often has the aim of damaging the reputation of a person or entity, or making money through advertising revenue.”  We seem to be conditioned that the worse and more damaging a story, the more quickly we seem to spread and share it.  
+
+Fake news has reached the point that it is having impacts on both our political and social world.  Generations earlier depended on a few news stations for their news.  The news stations had established standards to verify sources and validate the data provided.  With the explosion of social media, everyone with a phone, computer or any modern communications device can create their own news stories and distribute them around the globe in almost an instant. 
+
+One of the fastest growing areas of research is Fake news detection. Unfortunately, in the beginning a major challenge was the “ limited amount of resources (i.e., datasets, published literature) available.” 
+
+Our project was to create a fake news detection model.  We proposed in this project a fake news detection model that uses n-gram analysis and machine learning techniques. 
+
+
 ## Research Questions this Database can Answer ##
      1. Is the news "fake"?
      2. What is the prevalence of "fake" news compared to "true" news?
