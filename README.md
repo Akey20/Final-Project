@@ -64,6 +64,22 @@ ________________________________________________________________________________
 
 <br>
 
+## Subject Pie Chart
+
+<br>
+
+![p4_subject_pie](https://user-images.githubusercontent.com/94247881/171287028-98f466f2-c40d-487b-8392-8d25ed99d6c6.png)
+
+<br>
+
+## Tree Map
+
+<br>
+
+![p4_treemap](https://user-images.githubusercontent.com/94247881/171287095-b372ecdb-1d4f-418f-a845-e8d039e88ce4.png)
+
+<br>
+
 ## Slide Deck:
 https://docs.google.com/presentation/d/1FkjEmNRN04hJMBvYpfmN3gMBVczlM8g_WwElmOxY5sw/edit#slide=id.ga073618e60_0_16
 
