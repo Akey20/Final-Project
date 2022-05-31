@@ -15,6 +15,48 @@ body, html {height: 100%}
   background-position: center;
   background-size: cover;
 }
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: visible;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 </style>
 </head>
 <body>
@@ -38,10 +80,14 @@ body, html {height: 100%}
   </div>
   <div class="w3-display-middle w3-container">
     {% if result[0] == '0'  %}
-    <h1>True</h1>
+    <div class="popup">
+      <span class="popuptext" id="myPopup"><h2>True!</h2></span>
+    </div>    
     {% endif %}
     {% if result[0] == '1'  %}
-    <h1>False</h1>
+    <div class="popup">
+      <span class="popuptext" id="myPopup"><h2>Fake News</h2></span>
+    </div>    
     {% endif %}
   </div>
   <div class="w3-display-bottomleft w3-container">
@@ -50,6 +96,9 @@ body, html {height: 100%}
     <p>Jack Farnsworth, Markus Shipley, April Key, Chris Yarber, Henok Sososa</p>
   </div>
 </div>
+
+
+
 
 
 
@@ -221,7 +270,14 @@ body, html {height: 100%}
 
     </div>
 </div>
-
+<script>
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
 </body>
+
 </html>
 
