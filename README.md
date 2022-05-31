@@ -17,7 +17,7 @@
 
 <br>
 
-### Research Questions this Database can Answer ###
+## Research Questions this Database can Answer ##
      1. Is the news "fake"?
      2. What is the prevalence of "fake" news compared to "true" news?
      3. What are the popular topics and subjects among fake news articles?
