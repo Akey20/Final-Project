@@ -1,12 +1,7 @@
 # Final-Project: NEWS - REAL OR FAKE? :newspaper:
 <br>
 
-## Slide Deck:
-https://docs.google.com/presentation/d/1FkjEmNRN04hJMBvYpfmN3gMBVczlM8g_WwElmOxY5sw/edit#slide=id.ga073618e60_0_16
-
 <br>
-<br>
-
 
 ![fake_news](https://user-images.githubusercontent.com/94247881/169425898-55a8e59f-ef5e-4574-a611-9c38705b2675.jpg)
 
@@ -55,3 +50,10 @@ ________________________________________________________________________________
 
 
 
+
+<br>
+
+## Slide Deck:
+https://docs.google.com/presentation/d/1FkjEmNRN04hJMBvYpfmN3gMBVczlM8g_WwElmOxY5sw/edit#slide=id.ga073618e60_0_16
+
+<br>
