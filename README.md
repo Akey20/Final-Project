@@ -28,6 +28,11 @@
 ____________________________________________________________________________________________________________________
 <br>
 
+![p4_erd](https://user-images.githubusercontent.com/94247881/171286257-4ebdea8a-de13-4d27-a0c1-dcb5520d0c0c.png)
+
+
+<br>
+
 ## Heroku Application Hosting
 
 <br>
@@ -45,11 +50,13 @@ ________________________________________________________________________________
 
 <br>
 
+![p4_fake_nwc](https://user-images.githubusercontent.com/94247881/171286287-0ad726a2-2bbe-4aff-b664-19b4bddcd49d.png)
+
+<br>
+<br>
 
 
-
-
-
+![p4_true_nwc](https://user-images.githubusercontent.com/94247881/171286350-e7cc8597-b607-4137-9a56-e64203b5fc1c.png)
 
 <br>
 
