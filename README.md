@@ -16,6 +16,15 @@
 
 
 <br>
+
+### Research Questions this Database can Answer ###
+     1. Is the news "fake"?
+     2. What is the prevalence of "fake" news compared to "true" news?
+     3. What are the popular topics and subjects among fake news articles?
+     4. Are there more fake or true news stories?
+     5. Do any Dependable new sources emerge?
+     6. How confident are we that a ML model can predict fake news?
+     
 ____________________________________________________________________________________________________________________
 <br>
 
