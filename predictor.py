@@ -19,5 +19,5 @@ def newspredictor(input):
 
     feature = [filtered]
     ftm = cv.transform(feature)
-    #print(pac.predict(ftm))
+    print(pac.predict(ftm))
     return(pac.predict(ftm))

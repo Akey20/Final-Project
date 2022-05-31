@@ -36,7 +36,14 @@ body, html {height: 100%}
             <a href = "https://www.erudit.org/en/journals/informallogic/1900-v1-n1-informallogic04379/1057034ar.pdf">Axel Gelfert, 2019</a>
       </p>
   </div>
-  
+  <div class="w3-display-middle w3-container">
+    {% if result[0] == '0'  %}
+    <h1>True</h1>
+    {% endif %}
+    {% if result[0] == '1'  %}
+    <h1>False</h1>
+    {% endif %}
+  </div>
   <div class="w3-display-bottomleft w3-container">
     <p class="w3-xlarge">Project 4</p>
     <p class="w3-large">Group 1</p>
@@ -45,10 +52,6 @@ body, html {height: 100%}
 </div>
 
 
-
-{% if 'result[0]' == 0  %}
-    <h1>True</h1>
-{% endif %}
 
 
 <!-- Fake News Input Form Modal -->
