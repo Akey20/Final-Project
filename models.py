@@ -7,7 +7,7 @@ def create_classes(db):
         text = db.Column(db.String(255))
         subject = db.Column(db.String(255))
         news_date = db.Column(db.String(10))
-        #model_resp = db.Column(db.String(1))
+        model_resp = db.Column(db.String(1))
 
         def __repr__(self):
             return '<News %r>' % (self.title)

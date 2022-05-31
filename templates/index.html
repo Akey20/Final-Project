@@ -10,7 +10,7 @@
 body,h1,h5 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('Assets/1140-fact-fake-blocks.jpg');
+  background-image: url('https://cycontentdemo1.s3.amazonaws.com/1140-fact-fake-blocks.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -18,7 +18,7 @@ body, html {height: 100%}
 </style>
 </head>
 <body>
-
+                                                                                                    <!--CY - 05/30/2022- adjusted from  Assets/1140-fact-fake-blocks.jpg-->
 <div class="bgimg w3-display-container w3-text-white">
   <div class="w3-display-middle w3-jumbo">
 
@@ -45,6 +45,12 @@ body, html {height: 100%}
 </div>
 
 
+
+{% if 'result[0]' == 0  %}
+    <h1>True</h1>
+{% endif %}
+
+
 <!-- Fake News Input Form Modal -->
 <div id="input" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
@@ -59,9 +65,9 @@ body, html {height: 100%}
       <form method="POST" action="/send" role="form" name="form">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Article Title" name="articletitle"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Article Text" name="articletext"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date" name="articledate" value="2020-11-16"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" name="articledate"></p>
-        <p><button class="w3-button" type="submit">Submit</buttson></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date" name="articledate" value="2022-05-30"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" name="articlesubject"></p>
+        <p><button class="w3-button" type="submit">Submit</button> Visit Input Data link for Results</p>
       </form>
 
     </div>
@@ -78,19 +84,19 @@ body, html {height: 100%}
     </div>
     
     <div class="container">
-        <a href="Assets/vis1.html">fake News vs. True News</a>
+        <a href="vis1.html">fake News vs. True News</a>
     </div>
     <div class="container">
-        <a href="Assets/vis2.html">Fake News Word Cloud</a>
+        <a href="vis2.html">Fake News Word Cloud</a>
     </div>
     <div class="container">
-        <a href="Assets/vis3.html">True News Word Cloud</a>
+        <a href="vis3.html">True News Word Cloud</a>
     </div>
     <div class="container">
-        <a href="Assets/vis4.html">Pie Chart of the News Subjects</a>
+        <a href="vis4.html">Pie Chart of the News Subjects</a>
     </div>
     <div class="container">
-        <a href="Assets/vis5.html">Tree Map of the News Subjects</a>
+        <a href="vis5.html">Tree Map of the News Subjects</a>
     </div>
   </div>
 </div>

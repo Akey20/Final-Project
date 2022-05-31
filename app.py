@@ -34,10 +34,12 @@ db = SQLAlchemy(app)
 
 News = create_classes(db)
 
+result=[]
+
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", result=result ,News = News.query.all())
 
 TrueFalse=[]
 
@@ -51,9 +53,10 @@ def send():
         text = request.form["articletext"]
         subject = request.form["articlesubject"]
         date = request.form["articledate"]
-        #status = random.choice(TrueFalse)
-        print(newspredictor(text))
-        news = News(title=title, text=text, subject=subject, news_date=date)
+        status = newspredictor(text)       #random.choice(TrueFalse)
+        #print(newspredictor(text))
+        result=status[0]
+        news = News(title=title, text=text, subject=subject, news_date=date, model_resp=result)
         db.session.add(news)
         db.session.commit()
         return redirect("/", code=302)
@@ -65,6 +68,31 @@ def send():
 @app.route('/showall')
 def show_all():
    return render_template('show_all.html', News = News.query.all())    
+
+#Testing Vis 1 
+@app.route('/vis1.html')
+def vis1():
+    return render_template('vis1.html') 
+
+#Testing Vis 2 
+@app.route('/vis2.html')
+def vis2():
+    return render_template('vis2.html') 
+
+    #Testing Vis 3 
+@app.route('/vis3.html')
+def vis3():
+    return render_template('vis3.html') 
+
+    #Testing Vis 4 
+@app.route('/vis4.html')
+def vis4():
+    return render_template('vis4.html') 
+
+    #Testing Vis 5 
+@app.route('/vis5.html')
+def vis5():
+    return render_template('vis5.html') 
 
 
 if __name__ == "__main__":
