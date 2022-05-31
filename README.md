@@ -1,7 +1,7 @@
 # Final-Project: NEWS - REAL OR FAKE? :newspaper:
 <br>
-
-## Slide Deck - https://docs.google.com/presentation/d/1FkjEmNRN04hJMBvYpfmN3gMBVczlM8g_WwElmOxY5sw/edit#slide=id.ga073618e60_0_16
+## Slide Deck:
+ https://docs.google.com/presentation/d/1FkjEmNRN04hJMBvYpfmN3gMBVczlM8g_WwElmOxY5sw/edit#slide=id.ga073618e60_0_16
 
 <br>
 <br>
