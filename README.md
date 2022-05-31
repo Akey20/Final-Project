@@ -29,6 +29,9 @@ One of the fastest growing areas of research is Fake news detection. Unfortunate
 
 Our project was to create a fake news detection model.  We proposed in this project a fake news detection model that uses n-gram analysis and machine learning techniques. 
 
+## Dataset used:
+https://docs.google.com/document/d/1F4Otgi5A8ZFHCkOAq-zwJwSYBUbfYwGuoOKW0SSd914/edit?usp=sharing
+
 
 ## Research Questions this Database can Answer ##
      1. Is the news "fake"?
