@@ -1,4 +1,4 @@
-# Final-Project: NEWS - REAL OR FAKE?
+# Final-Project: NEWS - REAL OR FAKE? :newspaper:
 <br>
 <br>
 
@@ -7,7 +7,7 @@
 
 <br>
 
-## Members : April Key, Markus Shipley, Jack Farnsworth, Chris Yarber, Henok Sosasa
+## Members : 
 
 <br>
 
@@ -31,7 +31,9 @@ ________________________________________________________________________________
 <br>
 ________________________________________________________________________________________________________________________
 <br>
+
 ## Visuals
+
 <br>
 
 
